@@ -1,29 +1,29 @@
-console.log('Забираем данные с инпута и помещаем данные ниже инпута');
-
-// document.querySelector('button').onclick = myClick;
-
-// function myClick() {
-//   console.log("work");
-//   let a = document.querySelector('.i-1').value;
-//   console.log(a);
-
-//   document.querySelector('.out').innerHTML = a;
-// }
-
-// // value - получить текст из input
-// // innerHTML - получить - написать  текст в первый тег
-
-
-// Второй более актиуальный способ
-document.querySelector('button').addEventListener('click', myClick)
-
-function myClick() {
-  console.log("work");
-  let a = document.querySelector('.i-1').value;
-  console.log(a);
-
-  document.querySelector('.out').innerHTML = a;
+function a1() {
+  console.log('work a1');
+  f22();
 }
 
-// value - получить текст из input
-// innerHTML - получить - написать  текст в первый тег
+function f22() {
+  console.log('f22 working');
+  console.trace()
+}
+a1();
+
+const c = {
+  one: 1,
+  two: 2,
+  3: 'hello'
+}
+
+console.log(c);
+console.table(c);
+
+console.group();
+console.log('hello');
+console.warn('f22 working');
+console.groupEnd()
+
+let p = document.querySelector('p')
+console.dir(p);
+
+console.dir(one3) // айди хранится в глобальных переменных
